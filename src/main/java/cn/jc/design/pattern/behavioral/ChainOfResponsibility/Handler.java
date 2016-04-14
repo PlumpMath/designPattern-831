@@ -1,4 +1,4 @@
-package cn.jc.design.pattern.ChainOfResponsibility;
+package cn.jc.design.pattern.behavioral.ChainOfResponsibility;
 
 /**
  * Created by JC 2016/4/12.

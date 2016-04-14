@@ -1,9 +1,10 @@
-package cn.jc.design.pattern.ChainOfResponsibility;
+package cn.jc.design.pattern.behavioral.ChainOfResponsibility;
 
-public class ConcreteHandlerThree extends Handler{
+public class ConcreteHandlerTwo extends Handler {
+
 	@Override
 	public void HandleRequest(int request) {
-		if (request >= 20 && request < 30) {
+		if (request >= 10 && request < 20) {
 			System.out.println(
             		String.format("%s 处理请求 %s", this.getClass().getName(), request));
         }else if (successor != null) {
@@ -11,4 +12,5 @@ public class ConcreteHandlerThree extends Handler{
 			successor.HandleRequest(request);
 		}
 	}
+
 }
